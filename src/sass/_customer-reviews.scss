@@ -39,7 +39,7 @@
     font-size: 12px;
     line-height: 255%;
     text-align: center;
-    color: #000000;
+    color: var(--secondary-text-color);
 
     @media screen and (min-width: 320px) {
         width: 157px;
