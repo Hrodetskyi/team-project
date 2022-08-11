@@ -1,9 +1,39 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-headlines-color: #FFFFFF;
+  --secondary-text-color: #000000;
+  --text-color: #907E82;
+  --interactive-color: #D41342;
+  --hover-color: #D41443;
+  --accent-color: #FFA5BA;
+  --primary-bcg-color: #FFFFFF;
+  --secondary-bcg-color: #FFF5F6;
+  --hero-bcg-color: #FFB8CA;
+  --menu-bcg-color: #E17992;
+  --first-product-bcg: #FFB8CA;
+  --second-product-bcg: #F0D1A5;
+  --third-product-bcg: #C2E297;
+  --icon-bcg-color: #FEA5BB;
+  --points-bcg-color: #D9D9D9;
+  --bgc-customer-reviews: #fafafa;
+  --icon-fill: #FFFFFF;
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Titan One", cursive;
+}
+
+body {
+  font-family: var(--font-family-primary);
+}
+
+.title {
+  font-family: var(--font-family-secondary);
+}
+
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   background-color: #fff;
-  color: #2f2f37;
+  color: var;
   max-width: 960px;
   padding: 16px;
 }
@@ -23,10 +53,6 @@
   background-image: url("../images/logo.png");
   background-size: cover;
   background-position: center;
-}
-
-:root {
-  --bgc-customer-reviews: #fafafa;
 }
 
 .reviews {
