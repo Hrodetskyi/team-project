@@ -1,6 +1,6 @@
 
 .contacts {
-    background-color: var(--secondary-bcg-color);
+    background-image: linear-gradient(#FFFFFF 25%, #FFF5F6 1%);
     display: flex;
     justify-content: center;
     &__container {        
@@ -49,17 +49,14 @@
     }
 
     &__cafe {
-        width: 80px;
-        height: 16px;
+        width: 80px;        
         background-color: var(--second-product-bcg);
         border-radius: 4px;        
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
-        display: flex;
-        align-items: center;
+        display: flex;        
         justify-content: center;
-        letter-spacing: 0.04em;
         color: var(--primary-headlines-color);
         @media screen and (min-width: 768px) {
             font-size: 16px;
@@ -69,17 +66,14 @@
     }
 
     &__foodtruck {
-        width: 130px;
-        height: 16px;
+        width: 130px;        
         background-color: var(--third-product-bcg);
         border-radius: 4px;        
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
-        display: flex;
-        align-items: center;
+        display: flex;        
         justify-content: center;
-        letter-spacing: 0.04em;
         color: var(--primary-headlines-color);
         @media screen and (min-width: 768px) {
             font-size: 16px;
@@ -102,7 +96,6 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
-        letter-spacing: 0.04em;
         color: var(--secondary-text-color);
         margin-top: 0;
         margin-bottom: 8px;
@@ -168,6 +161,7 @@
         @media screen and (min-width: 768px) {
             font-size: 14px;
             line-height: 1.86;
+            margin-bottom: 12px;
         }
         @media screen and (min-width: 1200px) {
             font-size: 16px;
