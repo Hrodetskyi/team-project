@@ -1,5 +1,6 @@
 .about-section {
     background-color: var(--secondary-bcg-color);
+    padding: 40px 0;
 
     &__label {
         color: var(--accent-color);
@@ -8,6 +9,11 @@
         font-size: 18px;
         line-height: 1.2;
         text-transform: uppercase;
+
+        display: block;
+        text-align: center;
+        width: 210px;
+        margin: 0 auto 15px;
     }
 
     &__title {
@@ -18,13 +24,25 @@
         font-size: 34px;
         line-height: 1.15;
         text-transform: uppercase;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+        width: 200px;
+        margin: 0 auto 32px;
+    }
+
+    &__img {
+        margin: 0 auto 40px;
     }
 
     &__container {
         background-image: url(../images/about-bg.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-y: 50px;
+        background-position-y: 70px;
+
+        width: 300px;
+        margin: 0 auto;
     }
 
     &__page {
@@ -33,6 +51,9 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.6;
+
+        margin-bottom: 20px;
+        width: 230px;
 
         &:last-of-type {
             color: var(--text-color);
@@ -55,5 +76,10 @@
     &__icon {
         width: 8px;
         height: 8px;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: var(--btn-hover-color);
     }
 }
