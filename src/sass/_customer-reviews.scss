@@ -15,7 +15,7 @@
     }
 }
 
-.card__customer {
+.card__customer-photo {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -33,18 +33,42 @@
 .card__reviews {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 74px;
+    margin-bottom: 36px;
     background-color: var(--bgc-customer-reviews);
+
+    @media screen and (min-width: 320px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 968px;
+        margin-bottom: 36px;
+    }
 }
 
-
 .card__lines {
-    background: repeating-linear-gradient(#fafafa 0px, #fafafa 31px, #e1e1e1 31px, #e1e1e1 32px);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 180px;
+
+    background: repeating-linear-gradient(#fafafa 0px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+
+    @media screen and (min-width: 768px) {
+        max-width: 608px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 821px;
+    }
 }
 
 .card__text {
+    max-width: 157px;
     margin-right: auto;
     margin-left: auto;
     font-family: 'DM Sans';
@@ -55,22 +79,34 @@
     text-align: center;
     color: var(--secondary-text-color);
 
-
-    @media screen and (min-width: 320px) {
-        width: 157px;
-    }
-
     @media screen and (min-width: 768px) {
-        width: 514.12px;
+        max-width: 514.12px;
         font-size: 14px;
         line-height: 216%;
         letter-spacing: 0.04em;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 750px;
+        max-width: 750px;
         font-size: 16px;
         line-height: 186%;
     }
 
+}
+
+.card__customer {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
 }
