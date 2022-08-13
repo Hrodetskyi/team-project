@@ -1,7 +1,6 @@
-.reviews {
+.card {
     margin-right: auto;
     margin-left: auto;
-    background-color: var(--bgc-customer-reviews);
 
     @media screen and (min-width: 320px) {
         width: 280px;
@@ -16,7 +15,8 @@
     }
 }
 
-.reviews__customer {
+.card__customer {
+    display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
@@ -30,7 +30,21 @@
     }
 }
 
-.reviews__text {
+.card__reviews {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 74px;
+    background-color: var(--bgc-customer-reviews);
+}
+
+
+.card__lines {
+    background: repeating-linear-gradient(#fafafa 0px, #fafafa 31px, #e1e1e1 31px, #e1e1e1 32px);
+}
+
+.card__text {
     margin-right: auto;
     margin-left: auto;
     font-family: 'DM Sans';
@@ -40,6 +54,7 @@
     line-height: 255%;
     text-align: center;
     color: var(--secondary-text-color);
+
 
     @media screen and (min-width: 320px) {
         width: 157px;
