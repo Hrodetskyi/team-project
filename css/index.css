@@ -53,10 +53,27 @@ body {
   }
 }
 
-.title {
-  font-family: var(--font-family-secondary);
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .list {
   list-style: none;
   margin-top: 0px;
@@ -209,46 +226,58 @@ p {
 
 .item3::before {
   content: url(../images/heart.png);
-}
 
-.reviews {
+.card {
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--bgc-customer-reviews);
 }
 @media screen and (min-width: 320px) {
-  .reviews {
+  .card {
     width: 280px;
   }
 }
 @media screen and (min-width: 768px) {
-  .reviews {
+  .card {
     width: 620px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews {
+  .card {
     width: 968px;
   }
 }
 
-.reviews__customer {
+.card__customer {
+  display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
-  .reviews__customer {
+  .card__customer {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews__customer {
+  .card__customer {
     margin-bottom: 16px;
   }
 }
 
-.reviews__text {
+.card__reviews {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 74px;
+  background-color: var(--bgc-customer-reviews);
+}
+
+.card__lines {
+  background: repeating-linear-gradient(#fafafa 0px, #fafafa 31px, #e1e1e1 31px, #e1e1e1 32px);
+}
+
+.card__text {
   margin-right: auto;
   margin-left: auto;
   font-family: "DM Sans";
@@ -260,12 +289,12 @@ p {
   color: var(--secondary-text-color);
 }
 @media screen and (min-width: 320px) {
-  .reviews__text {
+  .card__text {
     width: 157px;
   }
 }
 @media screen and (min-width: 768px) {
-  .reviews__text {
+  .card__text {
     width: 514.12px;
     font-size: 14px;
     line-height: 216%;
@@ -273,7 +302,7 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews__text {
+  .card__text {
     width: 750px;
     font-size: 16px;
     line-height: 186%;
