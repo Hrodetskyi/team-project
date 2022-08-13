@@ -1,0 +1,79 @@
+.gallery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.gallery-list {
+    display: grid;
+    
+    grid-gap: 8px;
+
+    grid-template-rows: [row1-start] 57.85px [row2-start] 14.94px [row3-start] 1.98px [row4-start] 35.90px [row5-start] 3.97px [row6-start] 49.87px [row7-start] 12.95px [row8-start] 3.97px [row9-start] 37.89px [row10-end];
+    grid-template-columns: [col1-start] 138px [col2-start] 138px [col3-start] 283px [col4-start] 138px [col5-start] 138px [col6-start] 138px [col6-end] ;
+   
+    height: 430px;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+        
+}
+#item1 {
+    grid-row-start: row5-start;
+    grid-column-start: col1-start;
+    grid-row-end: row5-end;
+    grid-column-end: col1-end;
+}
+#item2 {
+    grid-row-start: row3-start;
+    grid-column-start: col2-start;
+    grid-row-end: row3-end;
+    grid-column-end: col2-end;
+}
+#item3 {
+    grid-row-start: row8-start;
+    grid-column-start: col2-start;
+    grid-row-end: row8-end;
+    grid-column-end: col2-end;
+}
+#item4 {
+    grid-row-start: row1-start;
+    grid-column-start: col3-start;
+    grid-row-end: row1-end;
+    grid-column-end: col3-end;
+}
+#item5 {
+    grid-row-start: row10-start;
+    grid-column-start: col3-start;
+    grid-row-end: row10-end;
+    grid-column-end: col3-end;
+}
+#item6 {
+    grid-row-start: row4-start;
+    grid-column-start: col4-start;
+    grid-row-end: row4-end;
+    grid-column-end: col4-end;
+}
+#item7 {
+    grid-row-start: row9-start;
+    grid-column-start: col4-start;
+    grid-row-end: row9-end;
+    grid-column-end: col4-end;
+}
+#item8 {
+    grid-row-start: row2-start;
+    grid-column-start: col5-start;
+    grid-row-end: row2-end;
+    grid-column-end: col5-end;
+}
+#item9 {
+    grid-row-start: row7-start;
+    grid-column-start: col5-start;
+    grid-row-end: row7-end;
+    grid-column-end: col5-end;
+}
+#item10 {
+    grid-row-start: row6-start;
+    grid-column-start: col6-start;
+    grid-row-end: row6-end;
+    grid-column-end: col6-end;
+}
