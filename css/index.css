@@ -993,6 +993,63 @@ header {
   margin-bottom: 10px;
   padding-top: 43px;
   background-color: var(--bgc-customer-reviews);
+  /*     &::after {
+      display: block;
+      content: '';
+      width: 32px;
+      height: 4px;
+      background-image: url(../images/Ellipse5.svg);
+      background-position: left center;
+      background-repeat: repeat-x;
+  } */
+}
+.card__reviews::before {
+  display: block;
+  position: absolute;
+  top: 30;
+  left: 53;
+  content: "";
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/quotes.svg);
+}
+@media screen and (min-width: 320px) {
+  .card__reviews {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__reviews {
+    width: 620px;
+    margin-bottom: 24px;
+  }
+  .card__reviews::before {
+    display: block;
+    position: absolute;
+    top: 20;
+    left: 6;
+    content: "";
+    width: 60.35px;
+    height: 40px;
+    background-image: url(../images/quotes.svg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__reviews {
+    width: 968px;
+    margin-bottom: 36px;
+  }
+  .card__reviews::before {
+    display: block;
+    position: absolute;
+    top: 32;
+    left: 72;
+    content: "";
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/quotes.svg);
+  }
 }
 .card__reviews::before {
   display: block;
