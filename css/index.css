@@ -17,6 +17,7 @@
   --icon-bcg-color: #FEA5BB;
   --points-bcg-color: #D9D9D9;
   --bgc-customer-reviews: #fafafa;
+  --dot-color: #C7133E;
   --icon-fill: #FFFFFF;
   --font-family-primary: "DM Sans", sans-serif;
   --font-family-secondary: "Titan One", cursive;
@@ -389,6 +390,11 @@ header {
   color: var(--text-color);
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min-resolution: 240dpi) {
+  .about-section__container {
+    background-image: url(../images/about-bg@2x.png);
+  }
+}
 .read-more-btn {
   background-color: var(--primary-headlines-color);
   width: 176px;
@@ -720,7 +726,7 @@ header {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 36px;
+  margin-bottom: 10px;
   padding-top: 43px;
   background-color: var(--bgc-customer-reviews);
   /*     &::after {
@@ -732,6 +738,54 @@ header {
       background-position: left center;
       background-repeat: repeat-x;
   } */
+}
+.card__reviews::before {
+  display: block;
+  position: absolute;
+  top: 30;
+  left: 53;
+  content: "";
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/quotes.svg);
+}
+@media screen and (min-width: 320px) {
+  .card__reviews {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__reviews {
+    width: 620px;
+    margin-bottom: 24px;
+  }
+  .card__reviews::before {
+    display: block;
+    position: absolute;
+    top: 20;
+    left: 6;
+    content: "";
+    width: 60.35px;
+    height: 40px;
+    background-image: url(../images/quotes.svg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__reviews {
+    width: 968px;
+    margin-bottom: 36px;
+  }
+  .card__reviews::before {
+    display: block;
+    position: absolute;
+    top: 32;
+    left: 72;
+    content: "";
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/quotes.svg);
+  }
 }
 .card__reviews::before {
   display: block;
@@ -837,6 +891,13 @@ header {
   line-height: 186%;
   text-align: center;
 }
+.card__customer::before {
+  display: block;
+  content: "...";
+  font-size: 24px;
+  letter-spacing: 10px;
+  color: var(--dot-color);
+}
 @media screen and (min-width: 768px) {
   .card__customer {
     font-size: 16px;
@@ -855,6 +916,18 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFFFFF), color-stop(1%, #FFF5F6));
+    background-image: linear-gradient(#FFFFFF 50%, #FFF5F6 1%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #FFFFFF), color-stop(1%, #FFF5F6));
+    background-image: linear-gradient(#FFFFFF 24%, #FFF5F6 1%);
+  }
 }
 .contacts__container {
   padding-top: 60px;
@@ -1116,22 +1189,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 32px;
 }
 @media screen and (min-width: 768px) {
   .contacts .buttons {
     margin-top: 60px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1140,6 +1210,7 @@ header {
 .contacts .buttons__location {
   width: 161px;
   height: 44px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,44 +1225,63 @@ header {
   border: none;
   padding: 0;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--primary-headlines-color);
 }
 @media screen and (min-width: 768px) {
   .contacts .buttons__location {
     margin-bottom: 0;
     margin-right: 14.5px;
+    width: 191px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts .buttons__location {
     margin-bottom: 0;
     margin-right: 12px;
+    width: 198px;
   }
 }
-.contacts .buttons__text-location {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  color: var(--primary-headlines-color);
-}
 .contacts .buttons__image-location {
+  margin-top: 3px;
   margin-left: 10px;
 }
 .contacts .buttons__franchise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 161px;
   height: 44px;
   background-color: var(--primary-bcg-color);
   border-radius: 22px;
   border: none;
   padding: 0;
-}
-.contacts .buttons__text-franchise {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-  text-align: center;
+  cursor: pointer;
   color: var(--interactive-color);
 }
+@media screen and (min-width: 768px) {
+  .contacts .buttons__franchise {
+    width: 174px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .buttons__franchise {
+    width: 168px;
+  }
+}
 .contacts .buttons__image-franchise {
+  margin-top: 3px;
   margin-left: 10px;
 }
 

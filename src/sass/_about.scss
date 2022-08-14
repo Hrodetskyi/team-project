@@ -2,6 +2,14 @@
     background-color: var(--secondary-bcg-color);
     padding: 40px 0;
 
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/about-bg.png);
+        background-repeat: no-repeat;
+        background-size: 1200px;
+        background-position-x: center;
+        background-position-y: 190px;
+    }
+
     &__label {
         color: var(--accent-color);
         font-family: 'Titan One';
@@ -12,8 +20,17 @@
 
         display: block;
         text-align: center;
-        width: 210px;
+        max-width: 351px;
         margin: 0 auto 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            letter-spacing: 0.04em;
+        }
     }
 
     &__title {
@@ -27,22 +44,67 @@
 
         text-align: center;
         letter-spacing: 0.04em;
-        width: 200px;
+        max-width: 200px;
         margin: 0 auto 32px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            max-width: 535px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__container {
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            width: 100%;
+            gap: 100px;
+        }
     }
 
     &__img {
         margin: 0 auto 40px;
+        max-width: 280px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            max-width: 335px;
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 500px;
+        }
     }
 
-    &__container {
-        background-image: url(../images/about-bg.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 70px;
-
-        width: 300px;
+    &__info {
         margin: 0 auto;
+        max-width: 320px;
+
+        @media screen and (max-width: 768px) {
+            background-image: url(../images/about-bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: 70px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin: 0;
+            max-width: 1200px;
+        }
     }
 
     &__page {
@@ -52,11 +114,45 @@
         font-size: 12px;
         line-height: 1.6;
 
-        margin-bottom: 20px;
         width: 230px;
+        margin-bottom: 20px;
 
         &:last-of-type {
             color: var(--text-color);
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: 0.04em;
+
+            width: 335px;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            width: 465px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-moz-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 240dpi) {
+        .about-section__info {
+            background-image: url(../images/about-bg@2x.png);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-moz-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 240dpi) {
+        .about-section {
+            background-image: url(../images/about-bg@2x.png);
         }
     }
 }
@@ -79,7 +175,7 @@
         margin-left: 10px;
     }
 
-    &:hover {
+    &:hover, &:focus {
         background-color: var(--btn-hover-color);
     }
 }
