@@ -1,27 +1,28 @@
 .footer {
-    position: relative;
+    
     background-color: var(--secondary-bcg-color);
-    padding-top: 57px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 3px;
 
-    &:after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    border: 1px solid #e1e1e1;
-    bottom: 89px;
-    left: 0;
+    @media screen and(min-width:1200px) {
+        padding-top: 30px;
+        padding-bottom: 4px;
     }
 
-
     &__wrapper {
+        
 
         @media screen and(min-width:768px) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 120px;
+        margin-bottom: 40px;
         }
+
+        @media screen and(min-width:1200px) {
+        margin-bottom: 60px;
+        }
+
+        
     }
 
     &__title {
@@ -38,16 +39,24 @@
         @media screen and(min-width:768px) {
         font-size: 26px;
         line-height: 1.15;
-        letter-spacing: 0.04em;
         width: 340px;
         }
 
-        @media screen and(min-width:1280px) {
+        @media screen and(min-width:1200px) {
         font-size: 30px;
         line-height: 1.13;
 
         width: 100%;
         }
+
+        &-indent {
+        margin-bottom: 16px;
+
+        @media screen and(min-width:768px) and(max-width:1200px) {
+        margin-bottom: 12px;
+        }
+
+    }
     }
 
     &__title--accent {
@@ -56,7 +65,6 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--hover-color);
@@ -69,33 +77,35 @@
         width: 340px;
         }
 
-        @media screen and(min-width:1280px) {
+        @media screen and(min-width:1200px) {
         font-size: 58px;
         line-height: 1.14;
 
         width: 100%;
         }
     }
-}
 
     
+}
 
 .title__wrapper {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
 
     @media screen and(min-width:768px) {
     margin-bottom: 0;
     }
 }
 
-    
-
-
-
-.social__items {
+.social__list {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 46px;
+    margin-bottom: 40px;
+
+    }
+
+.social__thumb {
+    
+    margin-top: 60px;
 }
 
 .social__item {
@@ -111,16 +121,15 @@
     display: block;
     width: 100%;
     height: 100%;
-
-    &:hover,
-    &:focus {
-    --color1: #d41443;
-    }
 }
 
 .social__icon {
-    width: 32px;
-    height: 32px;
+    fill: var(--accent-color);
+
+    &:hover,
+    &:focus {
+    fill: var(--hover-color);
+    }
 }
 
 .contacts__wrapper {
@@ -132,12 +141,12 @@
     text-align: right;
     margin-bottom: 65px;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px)  {
     font-size: 14px;
     margin-bottom: 0;
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
     font-size: 16px;
     margin-bottom: 0;
     }
@@ -155,6 +164,34 @@
     color: var(--hover-color);
 }
 
+.copyright-wrapper {
+    position: relative;
+    max-width: 1200px;
+    
+}
+
+.copyright-wrapper::before {
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    width: calc(100% + 40px);
+    content: '';
+    display: block;
+    border: 1px solid #e1e1e1;
+
+    @media screen and(min-width:768px) {
+    top: -8px;
+    left: -16px;
+    width: calc(100% + 32px);
+    }
+
+    @media screen and(min-width:1200px) {
+    top: -7px;
+    left: 0;
+    width: 100%;
+    }
+        }
+
 .footer__copyright {
     margin-left: auto;
     margin-right: auto;
@@ -162,29 +199,29 @@
     font-family: var(--font-family-primary);
 
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
+    
+    line-height: 1.86;
+    letter-spacing: 0.02em;
 
     color: #907e82;
     text-align: center;
 
     @media screen and(min-width:768px) {
-    width: 276px;
+    width: 278px;
     }
-}
-
+} 
 
 .back-to-top {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    left: calc((100% - 50px) / 2);
+    bottom: 40px;
     z-index: 10;
     width: 50px;
     height: 50px;
     border-color: transparent;
     border-radius: 50%;
     background-color: var(--accent-color);
-    // display: none;
+    display: none;
 }
 
 .back-to-top:hover,

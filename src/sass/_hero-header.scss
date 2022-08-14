@@ -21,7 +21,7 @@ header {
 }
 
 .ellipse {
-    display: none;
+    overflow: hidden;
 
     position: absolute;
     top: -197px;
