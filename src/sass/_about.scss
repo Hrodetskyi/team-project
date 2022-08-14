@@ -61,6 +61,14 @@
     }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+    .about-section__container {
+        background-image: url(../images/about-bg@2x.png);
+    }
+}
+
 .read-more-btn {
     background-color: var(--primary-headlines-color);
     width: 176px;
