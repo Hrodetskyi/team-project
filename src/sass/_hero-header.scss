@@ -26,6 +26,7 @@ header {
 }
 
 .ellipse {
+    display: none;
     position: absolute;
     top: 83px;
     left: 36px;
@@ -35,6 +36,12 @@ header {
     border-radius: 50%;
 
     background: var(--accent-color);
+
+    @media (min-width: 768px) {
+        display: block;
+        width: 335px;
+        height: 333px;
+    }
     
 }
 
@@ -234,6 +241,16 @@ header {
 .hero {
     padding-top: 222px;
     padding-bottom: 222px;
+
+    @media (min-width: 768px) {
+        padding-top: 162px;
+        padding-bottom: 162px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 0px;
+        padding-bottom: 557px;
+    }
 }
 
 .hero__title {
@@ -252,6 +269,17 @@ header {
         color: var(--hover-color);
         font-size: 48px;
         line-height: 0.965;
+
+        @media (min-width: 768px) {
+            font-size: 34px;
+            line-height: 0.9;
+        }
+    }
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+        line-height: 1.14;
+        max-width: 162px;
     }
 }
 
@@ -271,6 +299,7 @@ header {
     border: none;
     padding: 9px 14px;
     border-radius: 20px;
+    cursor: pointer;
 
     &:not(:last-child) {
         margin-right: 6px;
@@ -279,12 +308,21 @@ header {
     &--reverse {
         background-color: var(--primary-bcg-color);
     }
+
+    &--reverse:hover,
+    &--reverse:focus{
+        background: #ECEBEB;
+    }
 }
 
 .hero__position {
     position: absolute;
     bottom: -67px;
     z-index: 2;
+
+    @media (min-width: 768px) {
+        bottom: 22px;
+    }
 }
 
 .hero__main-img {
@@ -295,9 +333,113 @@ header {
 
     @media (min-width: 768px) {
         left: 322px;
+        bottom: -162px;
     }
 }
 
 .hero__position-img {
     position: relative;
+}
+
+.hero__img-milk {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: -146px;
+    }
+}
+
+.hero__thumb {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        position: absolute;
+        width: 120px;
+        left: 162px;
+        top: 33px;
+    }    
+}
+
+.hero__text {
+    font-size: 8px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+
+    color: #ffffff;
+}
+
+.hero__btn-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    fill: #d7224d;
+    cursor: pointer;
+}
+
+.hero__info-position {
+    display: none;
+    position: absolute;
+    top: -156px;
+    left: 692px;
+
+    @media (min-width: 768px) {
+        display: block;
+    } 
+}
+
+.hero__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    
+    height: 44px;
+}
+
+.hero__circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.hero__number {
+    font-family: 'Titan One';
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    margin-right: 10px;
+    z-index: 1;
+    
+    color: #D41443;
+}
+
+.hero__establishment {
+    font-size: 8px;
+    line-height: 1.25;
+    margin-right: 10px;
+    
+    color: #FFFFFF;
+}
+
+.hero__img-girl {
+    position: absolute;
+    bottom: -162px;
+    left: 562px;
 }
