@@ -21,19 +21,16 @@ header {
 }
 
 .ellipse {
-    overflow: hidden;
-
     position: absolute;
     top: -197px;
     left: 36px;
-
     width: 346px;
     height: 344px;
     border-radius: 50%;
 
     background: var(--accent-color);
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
         width: 335px;
         height: 333px;
@@ -41,7 +38,7 @@ header {
         left: 232px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         display: block;
         width: 534px;
         height: 534px;
@@ -54,8 +51,11 @@ header {
 .header,
 .hero {
     background: var(--hero-bcg-color);
+    @media screen and (max-width: 767px) {
+        overflow-x: hidden;
+    }
 
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -70,12 +70,12 @@ header {
 
     padding-top: 8px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         padding-top: 32px;
         padding-bottom: 10px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         position: relative;
         z-index: 1;
         padding-top: 37px;
@@ -84,7 +84,7 @@ header {
 }
 
 .header__nav-list {
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         gap: 35px;
     }
@@ -97,7 +97,7 @@ header {
 
     color: var(--primary-bcg-color);
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.3;
     }
@@ -110,7 +110,7 @@ header {
         border-top: 1px solid #E18298;
         border-bottom: 1px solid #E18298;
 
-        @media (min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             border: none;
         }
     }
@@ -124,7 +124,7 @@ header {
         color: var(--hover-color);
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 0px;
     }
 }
@@ -134,7 +134,7 @@ header {
     align-items: center;
     gap: 32px;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         flex-direction: row-reverse;
         gap: 141px;
     }
@@ -158,7 +158,7 @@ header {
 
     margin: 0px 20px 19px 20px;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 
@@ -200,7 +200,7 @@ header {
         background: var(--btn-hover-color);
     }
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: flex;
     }
 } 
@@ -220,11 +220,22 @@ header {
 }
 
 .header__menu-btn {
+
     border: none;
     background-color: transparent;
     display: inline-flex;
     margin: 0;
     padding: 0;
+
+}
+
+.header__menu-btn.is-open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    @media screen and (min-width: 768px) {
+        right: 32px;
+    }
 }
 
 .header__menu-btn .header__icon-cross {
@@ -239,7 +250,7 @@ header {
     display: none;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     .header__menu {
         display: none;
         position: absolute;
@@ -262,13 +273,13 @@ header {
     flex-direction: column;
 }
 
-// @media (min-width: 768px) {
+// @media screen and (min-width: 768px) {
 //     .header__menu {
 //         display: flex;
 //     }
 // }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .header__menu-btn {
         display: none;
     }
@@ -279,12 +290,12 @@ header {
     padding-top: 222px;
     padding-bottom: 222px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         padding-top: 162px;
         padding-bottom: 162px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 0px;
         padding-bottom: 557px;
     }
@@ -307,19 +318,19 @@ header {
         font-size: 48px;
         line-height: 0.965;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             font-size: 34px;
             line-height: 0.9;
         }
     }
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 22px;
         line-height: 1.14;
         max-width: 162px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 38px;
         line-height: 1.16;
         max-width: 277px;
@@ -358,7 +369,7 @@ header {
         background: var(--btn-hover-color);
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.3;
         padding: 11px 23px;
@@ -370,11 +381,11 @@ header {
     bottom: -67px;
     z-index: 2;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         bottom: 22px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         bottom: -241px;
     }
 }
@@ -385,12 +396,12 @@ header {
     right: 32px;
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         left: 322px;
         bottom: -162px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         bottom: -557px;
         left: 620px;
     }
@@ -403,13 +414,13 @@ header {
 .hero__img-milk {
     display: none;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
         bottom: -146px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         bottom: -497px;
     }
 }
@@ -417,7 +428,7 @@ header {
 .hero__thumb {
     display: none;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
         width: 120px;
@@ -425,7 +436,7 @@ header {
         top: 33px;
     }  
     
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         bottom: -473px;
         left: 213px;
         top: unset;
@@ -440,7 +451,7 @@ header {
 
     color: #ffffff;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.4;
         margin-bottom: 20px;
@@ -459,7 +470,7 @@ header {
     fill: #d7224d;
     cursor: pointer;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 26px;
         height: 26px;
     }
@@ -469,7 +480,7 @@ header {
     width: 5px;
     height: 5px;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 7px;
         height: 7px;
     }
@@ -481,11 +492,11 @@ header {
     top: -156px;
     left: 692px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
     } 
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         top: unset;
         bottom: -215px;
         left: 1074px;
@@ -505,7 +516,7 @@ header {
     
     height: 44px;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         height: 77px;
     }
 }
@@ -519,7 +530,7 @@ header {
     background-color: var(--primary-bcg-color);
     border-radius: 50%;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 30px;
         height: 30px;
     }
@@ -535,7 +546,7 @@ header {
     
     color: var(--third-text-color);
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 46px;
         line-height: 1.15;
     }
@@ -547,7 +558,7 @@ header {
     margin-right: 10px;
     color: #FFFFFF;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.3;
     }
@@ -559,11 +570,11 @@ header {
     bottom: -162px;
     left: 562px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         bottom: -557px;
         left: 864px;
     }
