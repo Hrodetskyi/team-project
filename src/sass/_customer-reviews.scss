@@ -35,7 +35,7 @@
 
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 36px;
+    margin-bottom: 10px;
     padding-top: 43px;
     background-color: var(--bgc-customer-reviews);
 
@@ -49,18 +49,6 @@
         height: 40px;
         background-image: url(../images/quotes.svg);
     }
-
-
-
-    /*     &::after {
-        display: block;
-        content: '';
-        width: 32px;
-        height: 4px;
-        background-image: url(../images/Ellipse5.svg);
-        background-position: left center;
-        background-repeat: repeat-x;
-    } */
 
     @media screen and (min-width: 320px) {
         width: 280px;
@@ -152,6 +140,14 @@
     font-size: 14px;
     line-height: 186%;
     text-align: center;
+
+    &::before {
+        display: block;
+        content: '...';
+        font-size: 24px;
+        letter-spacing: 10px;
+        color: var(--dot-color);
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
