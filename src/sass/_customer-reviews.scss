@@ -157,3 +157,22 @@
         font-size: 20px;
     }
 }
+
+.card__markers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+    }
+
+    & svg:not(first) {
+        margin-right: 18px;
+    }
+}
+
+.card__home {
+    fill: var(--home-color);
+}
