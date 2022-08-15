@@ -1,7 +1,6 @@
 .about-section {
     background-color: var(--secondary-bcg-color);
         padding-top: 60px;
-        padding-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/about-bg.png);
@@ -133,7 +132,8 @@
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
-            width: 465px;
+            width: 463px;
+            margin-bottom: 40px;
         }
     }
 }
