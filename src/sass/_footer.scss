@@ -1,4 +1,3 @@
-
 .backdrop-hero {
     position: fixed;
     top: 0;
@@ -183,7 +182,6 @@
         transition: background-color var(--transition-duration) var(--transition-timing-function);
     }
 }
-
 // Footer
 
 .footer {
@@ -293,7 +291,13 @@
 
 .social__thumb {
     
-    margin-top: 60px;
+    @media screen and (min-width:1200px) {
+        padding-top: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 0px;
+    }
+
 }
 
 .social__item {

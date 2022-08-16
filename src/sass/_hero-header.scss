@@ -51,7 +51,6 @@ header {
 
 .header,
 .hero {
-    position: relative;
     background: var(--hero-bcg-color);
 }
 
@@ -83,6 +82,7 @@ header {
         padding-right: 16px;
     }
 }
+
 
 /* Header */
 
@@ -279,13 +279,13 @@ header {
     .header__menu {
         display: none;
         position: absolute;
-        right: 0;
-        top: 0;
+        top: 0px;
+        right: 0px;
 
         background: var(--menu-bcg-color);
 
         width: 250px;
-        height: 502px;
+        height: 100vh;
         padding-top: 60px;
 
         z-index: 3;
@@ -296,12 +296,6 @@ header {
     display: flex;
     flex-direction: column;
 }
-
-// @media screen and (min-width: 768px) {
-//     .header__menu {
-//         display: flex;
-//     }
-// }
 
 @media screen and (min-width: 1200px) {
     .header__menu-btn {
