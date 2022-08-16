@@ -28,4 +28,7 @@
 
     --font-family-primary: 'DM Sans', sans-serif;
     --font-family-secondary: 'Titan One', cursive;
+    
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }

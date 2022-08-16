@@ -1,18 +1,26 @@
 <header class="header">
-    <div class="container">
+    <div class="header__container">
         <div class="header__position">
-            <svg class="logo" width="199px" height="50px">
-                <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-            <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="header__menu"
-                data-menu-button>
-                <svg class="header__btn-svg" width="20px" height="12px">
-                    <use class="header__icon-menu" href="./images/icons.svg#icon-menu-20-12"></use>
-                    <use class="header__icon-cross" href="./images/icons.svg#icon-close"></use>
+            <a href="./">
+                <svg class="logo" width="199px" height="50px">
+                    <use href="./images/icons.svg#icon-logo"></use>
                 </svg>
-            </button>
-
-            <div class="header__menu" id="header__menu" data-menu>
+            </a>
+            <div class="header__btn-group">
+                <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="header__menu" data-menu-button>
+                    <svg class="header__btn-svg" width="20px" height="12px">
+                        <use class="header__icon-menu" href="./images/icons.svg#icon-menu-20-12"></use>
+                        <use class="header__icon-cross" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                
+                <button class="header__btn-main" type="button" hero-modal-open>
+                    <span class="header__btn-part">Buy now</span>
+                    <svg width="7px" height="10px">
+                        <use href="./images/icons.svg#icon-arrow-4-8"></use>
+                    </svg>
+                </button>
+             <div class="header__menu" id="header__menu" data-menu>
                 <button class="header__btn" type="button">
                     <span class="header__btn-span">Buy now</span>
                     <svg width="7px" height="10px">
@@ -20,25 +28,28 @@
                     </svg>
                 </button>
                 <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-part"><a class="link header__nav-item current" href="#home">Home</a></li>
-                        <li class="header__nav-part"><a class="link header__nav-item" href="#about-us">About us</a></li>
-                        <li class="header__nav-part"><a class="link header__nav-item" href="#how-made">How it’s made?</a></li>
-                        <li class="header__nav-part"><a class="link header__nav-item" href="#products">Our products</a></li>
-                        <li class="header__nav-part"><a class="link header__nav-item" href="#contact">Contact</a></li>
+                    <ul class="header__nav-list list">
+                        <li class="header__nav-part"><a class="link header__nav-item current" href="#home"><span class="header__nav-text">Home</span></a></li>
+                        <li class="header__nav-part"><a class="link header__nav-item" href="#about-us"><span class="header__nav-text">About us</span></a></li>
+                        <li class="header__nav-part"><a class="link header__nav-item" href="#how-made"><span class="header__nav-text">How it’s made?</span></a></li>
+                        <li class="header__nav-part"><a class="link header__nav-item" href="#products"><span class="header__nav-text">Our products</span></a></li>
+                        <li class="header__nav-part"><a class="link header__nav-item" href="#contact"><span class="header__nav-text">Contact</span></a></li>
                     </ul>
                 </nav>
+            </div>
             </div>
         </div>
     </div>
 </header>
 <!-- Hero -->
 <section class="hero">
-    <div class="container">
+    <div class="hero__container">
         <div class="hero__position">
             <h1 class="hero__title">ice cream made with <span class="hero__title--purple">passion</span></h1>
-            <button class="hero__btn" type="button"><a class="hero__link link" href="#products">Products</a></button>
-            <button class="hero__btn hero__btn--reverse" type="button"><a class="hero__link hero__link--reverse link" href="#how-made">How it’s made?</a></button>
+            <div class="hero__box">
+                <a class="hero__link " href="#products">Products</a>
+                <a class="hero__link hero__link--reverse" href="#how-made">How it’s made?</a>
+            </div>
         </div>
         <picture>
             <source srcset="./images/ice-cream-desk@2x.png 472w, ./images/ice-cream-desk.png 236w" sizes="236px" media="(min-width: 1200px)">
@@ -46,6 +57,41 @@
             <source srcset="./images/ice-cream-mob@2x.png 342w, ./images/ice-cream-mob.png 171w" sizes="171px" media="(max-width: 767px)">
             <img class="hero__main-img" src="./images/ice-cream-mob.png" alt="Ice-cream">
         </picture>
-        <!-- <div class="ellipse"></div> -->
+        <div class="ellipse"></div>
+        <picture>
+            <source srcset="./images/milk-desk@2x.png 426w, ./images/milk-desk.png 213w" 
+            sizes="213px" media="(min-width: 1200px)">
+            <source srcset="./images/milk-tab@2x.png 304w, ./images/milk-tab.png 152w" 
+            sizes="152px" media="(min-width: 768px)">
+            <img class="hero__img-milk" src="./images/milk-tab.png" alt="Jug of milk">
+        </picture>
+        <div class="hero__thumb">
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="hero__btn-modal" type="button">
+                <svg class="header__btn-arrow" width="5px" height="5px">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="hero__info-position">
+            <div class="hero__info">
+                <div class="hero__circle"></div>
+                <span class="hero__number">16</span>
+                <span class="hero__establishment">cafes</span>
+            </div>
+            <div class="hero__info">
+                <div class="hero__circle"></div>
+                <span class="hero__number">23</span>
+                <span class="hero__establishment">food trucks</span>
+            </div>
+        </div>
+        <picture>
+            <source srcset="./images/girl-desk@2x.png 608w, ./images/girl-desk.png 304w" 
+            sizes="304px" media="(min-width: 1200px)">
+            <source srcset="./images/girl-tab@2x.png 380w, ./images/girl-tab.png 190w" 
+            sizes="190px" media="(min-width: 768px)">
+            <img class="hero__img-girl" src="./images/girl-tab.png" alt="Girl is eating ice cream">
+        </picture>
     </div>
 </section>
