@@ -176,3 +176,33 @@
 .card__home {
     fill: var(--home-color);
 }
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & li {
+        list-style: none;
+    }
+
+    & button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--dot-slider);
+    }
+
+    /*  & button:first-child {
+        background-color: green;
+    } */
+}
+
+.slider .slick-active button {
+    background-color: var(--home-color);
+}
+
+.slick-dots li button:before {
+    content: "";
+}
