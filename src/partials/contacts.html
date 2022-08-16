@@ -80,7 +80,7 @@
         </ul>
         <ul class="buttons">
             <li>
-                <button class="buttons__location" type="button">Our Locations
+                <button class="buttons__location" type="button" data-location-open>Our Locations
                     <svg class="buttons__image-location" width="7px" height="10px" aria-hidden="true">
                         <use href="./images/icons.svg#icon-arrow-right-white"></use>
                     </svg></button>
@@ -95,3 +95,40 @@
         </ul>
     </div>
 </section>
+<div class="backdrop-location is-hidden" data-location-modal>
+    <div class="location-modal">
+        <button class="button-close" type="button" data-locaion-close>
+                        <svg class="modal-soc-icon" width="11" height="11">
+                            <use href="./images/icons.svg#icon-x"></use>
+                        </svg>
+
+        </button>
+        <div class="modal-inner">
+            <h3 class="modal-title title">Find Us!</h3>            
+            <ul class="modal-list">
+                <li class="modal-item">
+                    <span class="modal-city">Chicago</span>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10595.990925829108!2d-87.63104584396794!3d41.81969839982142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2be525a73db5%3A0xba2c8302a4dbff7b!2sMandrake%20Park!5e0!3m2!1sen!2sua!4v1660684198071!5m2!1sen!2sua"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+                <li class="modal-item">
+                    <span class="modal-city">Los Angeles</span>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30863.528522279314!2d-118.22695138823126!3d33.808029447389366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd3471683ca777%3A0x90549a5a6363f2f7!2sSilverado%20Park!5e0!3m2!1sen!2sua!4v1660684083925!5m2!1sen!2sua"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+                <li class="modal-item">
+                    <span class="modal-city">New York</span>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.116686755859!2d-73.99940961323206!3d40.71544769608447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe47c97285cc7fa09!2sColumbus%20Park%20Pavilion!5e0!3m2!1sen!2sua!4v1660683899572!5m2!1sen!2sua"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+            </ul>
+            
+
+        </div>
+    </div>
