@@ -1,6 +1,11 @@
 .about-section {
     background-color: var(--secondary-bcg-color);
         padding-top: 60px;
+        padding-bottom: 20px;
+        
+        @media (min-width: 768px) {
+                padding-bottom: 30px;
+            }
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/about-bg.png);

@@ -2,20 +2,34 @@
     &__section {
         background-color: var(--secondary-bcg-color);
         margin: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        @media (min-width: 768px) {
+            padding-top: 30px;
+            padding-bottom: 32px;
+            }
+        
+        @media (min-width: 1200px) {
+            padding-top: 30px;
+            padding-bottom: 60px;
+            }
     }
 
     &__container {
-        padding: 20px 70px 60px 30px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         @media (min-width: 768px) {
             min-width: 768px;
-            padding: 60px 32px;
+            padding-left: 32px;
+            padding-right: 32px;
         }
 
         @media (min-width: 1200px) {
             min-width: 1200px;
-            padding: 60px 16px;
-            margin: auto;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 
