@@ -137,7 +137,7 @@
     }
     &__tooltip {
         visibility: hidden;
-        width: 120px;
+        width: 80px;
         background-color: var(--accent-color);
         color: var(--third-text-color);
         text-align: center;
@@ -146,8 +146,8 @@
         position: absolute;
         z-index: 1;
         top: -5px;
-        left: 110%;
-        font-size: 20px;
+        left: 75%;
+        font-size: 15px;
     }
     &__tooltip::after {
         content: "";
