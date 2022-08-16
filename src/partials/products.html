@@ -1,50 +1,93 @@
 <section class="section products__section" id="products">
-    <div class="container">
+    <div class="container products__container">
         <b class="section__label">100% natural</b>
         <h2 class="section__title">products</h2>
 
         <ul class="list products__list">
-            <li class="products__item">
-                <h3 class="products__title title">ice cream</h3>
-                <p class="products__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                    facilisis.
-                </p>
-                <button type="button" class="products__button">
-                    <svg width="20" height="20" class="products__button--icon">
-                        <use href="./images/icons.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
+            <li class="products__item" data-card>
+                <div class="front pink-card">
+                    <h3 class="products__title title">ice cream</h3>
+                    <p class="products__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et. dolore magna aliqua facilisis.
+                    </p>
+                    <button type="button" class="products__button" data-flip-open>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="back pink-card">
+                    <h3 class="products__title title">ice cream</h3>
+                    <p class="products__description--additional">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo id vero
+                        temporibus asperiores exercitationem beatae ipsum molestias fugit?
+                    </p>
+                    <button type="button" class="products__button" data-flip-close>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
             </li>
 
-            <li class="products__item">
-                <h3 class="products__title title">ice coffee</h3>
-                <p class="products__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                    facilisis.
-                </p>
-                <button type="button" class="products__button">
-                    <svg width="20" height="20" class="products__button--icon">
-                        <use href="./images/icons.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
+            <li class="products__item" data-card-second>
+                <div class="front yellow-card">
+                    <h3 class="products__title title">ice coffee</h3>
+                    <p class="products__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et. dolore magna aliqua facilisis.
+                    </p>
+                    <button type="button" class="products__button" data-flip-second>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="back yellow-card">
+                    <h3 class="products__title title">ice coffee</h3>
+                    <p class="products__description--additional">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo id vero
+                        temporibus asperiores exercitationem beatae ipsum molestias fugit?
+                    </p>
+                    <button type="button" class="products__button" data-close-second>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
             </li>
 
-            <li class="products__item">
-                <h3 class="products__title title">milkshakes</h3>
-                <p class="products__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                    facilisis.
-                </p>
-                <button type="button" class="products__button">
-                    <svg width="20" height="20" class="products__button--icon">
-                        <use href="./images/icons.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
+            <li class="products__item" data-card-third>
+                <div class="front green-card">
+                    <h3 class="products__title title">milkshakes</h3>
+                    <p class="products__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et. dolore magna aliqua facilisis.
+                    </p>
+                    <button type="button" class="products__button" data-flip-third>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="back green-card">
+                    <h3 class="products__title title">milkshakes</h3>
+                    <p class="products__description--additional">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo id vero
+                        temporibus asperiores exercitationem beatae ipsum molestias fugit?
+                    </p>
+                    <button type="button" class="products__button" data-close-third>
+                        <svg width="20" height="20" class="products__button--icon">
+                            <use href="./images/free-icon-font-arrow-small-left-3916837.svg#products__arrow"></use>
+                        </svg>
+                    </button>
+                </div>
             </li>
         </ul>
     </div>
 </section>
+

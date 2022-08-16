@@ -61,6 +61,7 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 a {
     list-style-type: none;
     text-decoration: none;
@@ -77,4 +78,8 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
