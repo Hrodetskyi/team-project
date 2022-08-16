@@ -10,7 +10,7 @@
     padding-top: 93px;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity var(--transition-duration) var(--transition-timing-function);
+    transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
     z-index: 101;
     overflow-y: scroll;
 }
@@ -115,6 +115,7 @@
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
+    cursor: pointer;
     background-color: var(--btn-hover-color);
     transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
@@ -177,6 +178,7 @@
 
     &:hover,
     &:focus {
+        cursor: pointer;
         background-color: var(--hover-color);
         transition: background-color var(--transition-duration) var(--transition-timing-function);
     }
