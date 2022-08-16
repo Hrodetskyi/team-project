@@ -19,6 +19,7 @@
   --bgc-customer-reviews: #fafafa;
   --dot-color: #C7133E;
   --home-color: #D31342;
+  --dot-slider: #D9D9D9;
   --icon-fill: #FFFFFF;
   --arrow-fill: #D7224D;
   --font-family-primary: "DM Sans", sans-serif;
@@ -1196,6 +1197,39 @@ header {
 
 .card__home {
   fill: var(--home-color);
+}
+
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  /*  & button:first-child {
+      background-color: green;
+  } */
+}
+.slider .slick-dots li {
+  list-style: none;
+}
+.slider .slick-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--dot-slider);
+}
+
+.slider .slick-active button {
+  background-color: var(--home-color);
+}
+
+.slick-dots li button:before {
+  content: "";
 }
 
 .contacts {
