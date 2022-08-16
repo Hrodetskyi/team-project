@@ -112,9 +112,11 @@ header {
 }
 
 .header__nav-item {
+    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+    padding: 12px 0px;
 
     color: var(--primary-bcg-color);
 
@@ -125,8 +127,6 @@ header {
 }
 
 .header__nav-part {
-    padding: 12px 0px;
-
     &:nth-child(odd) {
         border-top: 1px solid #E18298;
         border-bottom: 1px solid #E18298;
@@ -139,6 +139,8 @@ header {
 
 .header__nav-text {
     margin-left: 20px;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
     &:hover,
     &:focus {
@@ -179,13 +181,15 @@ header {
 
     margin: 0px 20px 19px 20px;
 
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
     @media screen and (min-width: 1200px) {
         display: none;
     }
 
     &:hover,
     &:focus {
-        background: var(--btn-hover-color);
+        background-color: var(--btn-hover-color);
     }
 }
 
@@ -215,9 +219,11 @@ header {
     cursor: pointer;
     padding: 0px 37px;
 
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
     &:hover,
     &:focus {
-        background: var(--btn-hover-color);
+        background-color: var(--btn-hover-color);
     }
 
     @media screen and (min-width: 768px) {
@@ -397,6 +403,8 @@ header {
     border-radius: 20px;
     cursor: pointer;
 
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
     &:not(:last-child) {
         margin-right: 6px;
     }
@@ -408,7 +416,7 @@ header {
 
     &--reverse:hover,
     &--reverse:focus{
-        background: var(--btn-hover-color);
+        background-color: var(--btn-hover-color);
     }
 
     @media screen and (min-width: 1200px) {
