@@ -49,6 +49,8 @@
         display: flex;
         flex-direction: column;
 
+        animation: tween 28s ease infinite;
+
         @media (min-width: 768px) {
             margin-bottom: 0;
             max-width: 180px;
@@ -82,6 +84,10 @@
         width: 98px;
         height: 56px;
 
+        position: relative;
+        display: inline-block;
+
+
         @media (min-width: 768px) {
         width: 147px;
         }
@@ -100,7 +106,9 @@
             margin-bottom: 16px;
         }
     }
-
+        &__text:hover &__tooltip {
+                visibility: visible;
+        }
     &__description {
 
         padding: 0;
@@ -127,8 +135,47 @@
         }
 
     }
-}
+    &__tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: var(--accent-color);
+        color: var(--third-text-color);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 110%;
+        font-size: 20px;
+    }
+    &__tooltip::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent var(--accent-color) transparent transparent;
+    }
+    &__tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent var(--accent-color) transparent transparent;
+        }
+    
+        
 
+    &__text:hover &__tooltip {
+    visibility: visible;
+}
+}
 .item1::before {
     content: url(../images/group.png);
 }
