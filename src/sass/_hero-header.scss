@@ -153,10 +153,12 @@ header {
 }
 
 .header__btn-group {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
     @media screen and (min-width: 1200px) {
         flex-direction: row-reverse;
         gap: 141px;
@@ -255,9 +257,10 @@ header {
 }
 
 .header__menu-btn.is-open {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 5;
     @media screen and (min-width: 768px) {
         right: 32px;
     }
@@ -275,12 +278,12 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.5px) {
     .header__menu {
         display: none;
-        position: absolute;
-        top: 0px;
-        right: 0px;
+        position: fixed;
+        right: 0;
+        top: 0;
 
         background: var(--menu-bcg-color);
 
