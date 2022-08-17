@@ -51,7 +51,6 @@ header {
 
 .header,
 .hero {
-    position: relative;
     background: var(--hero-bcg-color);
 }
 
@@ -83,6 +82,7 @@ header {
         padding-right: 16px;
     }
 }
+
 
 /* Header */
 
@@ -288,7 +288,7 @@ header {
         background: var(--menu-bcg-color);
 
         width: 250px;
-        height: 502px;
+        height: 100vh;
         padding-top: 60px;
 
         z-index: 3;

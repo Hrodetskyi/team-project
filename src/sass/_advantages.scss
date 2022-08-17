@@ -1,36 +1,22 @@
 .advantages {
     &__section {
         background-color: var(--secondary-bcg-color);
-        margin: 0;
         padding-top: 20px;
         padding-bottom: 30px;
 
         @media (min-width: 768px) {
             padding-top: 30px;
             padding-bottom: 32px;
+            padding-left: 16px;
+            padding-right: 16px;
             }
         
         @media (min-width: 1200px) {
             padding-top: 30px;
             padding-bottom: 60px;
+            padding-left: 0px;
+            padding-right: 0px;
             }
-    }
-
-    &__container {
-        padding-left: 20px;
-        padding-right: 20px;
-
-        @media (min-width: 768px) {
-            min-width: 768px;
-            padding-left: 32px;
-            padding-right: 32px;
-        }
-
-        @media (min-width: 1200px) {
-            min-width: 1200px;
-            padding-left: 16px;
-            padding-right: 16px;
-        }
     }
 
     &__list {
@@ -48,6 +34,8 @@
         max-width: 230px;
         display: flex;
         flex-direction: column;
+
+        animation: tween 28s ease infinite;
 
         @media (min-width: 768px) {
             margin-bottom: 0;
@@ -82,6 +70,10 @@
         width: 98px;
         height: 56px;
 
+        position: relative;
+        display: inline-block;
+
+
         @media (min-width: 768px) {
         width: 147px;
         }
@@ -100,7 +92,9 @@
             margin-bottom: 16px;
         }
     }
-
+        &__text:hover &__tooltip {
+                visibility: visible;
+        }
     &__description {
 
         padding: 0;
@@ -127,8 +121,47 @@
         }
 
     }
-}
+    &__tooltip {
+        visibility: hidden;
+        width: 80px;
+        background-color: var(--accent-color);
+        color: var(--third-text-color);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 75%;
+        font-size: 15px;
+    }
+    &__tooltip::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent var(--accent-color) transparent transparent;
+    }
+    &__tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent var(--accent-color) transparent transparent;
+        }
+    
+        
 
+    &__text:hover &__tooltip {
+    visibility: visible;
+}
+}
 .item1::before {
     content: url(../images/group.png);
 }

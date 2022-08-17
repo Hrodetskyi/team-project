@@ -158,23 +158,18 @@
     }
 }
 
-.card__markers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
+.slider {
+    padding-top: 30px;
+    padding-bottom: 42px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 32px;
+        padding-bottom: 52px;
     }
 
-    & svg:not(first) {
-        margin-right: 18px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 72px;
     }
-}
-
-.card__home {
-    fill: var(--home-color);
 }
 
 .slider .slick-dots {
@@ -182,9 +177,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    bottom: -16px;
 
     & li {
+        margin-right: 18px;
+        padding: 0;
+        width: 12px;
+        height: 12px;
         list-style: none;
+
     }
 
     & button {
@@ -194,13 +195,16 @@
         background-color: var(--dot-slider);
     }
 
-    /*  & button:first-child {
-        background-color: green;
-    } */
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 
 .slider .slick-active button {
-    background-color: var(--home-color);
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url(../images/home.svg);
 }
 
 .slick-dots li button:before {
