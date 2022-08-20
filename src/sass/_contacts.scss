@@ -333,14 +333,14 @@
     overflow-y: scroll;
     transition: opacity var(--transition-duration) var(--transition-timing-function);
 
-    &.is-hidden {
+    &.is-hidden-location {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
 
     }
 
-    &.is-hidden .location-modal {
+    &.is-hidden-location .location-modal {
 
         transform: translate(-50%, -50%) scale(0.9);
         transition: opacity var(--transition-duration) var(--transition-timing-function),
